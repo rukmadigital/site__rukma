@@ -1,0 +1,84 @@
+/* =============================== */
+/* ======== $PRELOAD      ======== */
+/* =============================== */
+.loadingpage {
+  width: 100vw;
+  height: 100vh;
+  background: #161616;
+  position: fixed;
+  z-index: 10000000;
+  overflow: hidden; }
+
+.loadingpage:before {
+  content: '';
+  width: 51%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  z-index: 2;
+  left: 0%;
+  top: 0%; }
+
+.loadingpage:after {
+  content: '';
+  width: 51%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  z-index: 2;
+  right: 0%;
+  top: 0%; }
+
+.loadingpage .counter {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 3; }
+
+.loadingpage p {
+  font-size: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #9a9a9a;
+  font-size: 5rem;
+  font-weight: bolder; }
+
+.pageisloaded {
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 1s 1.3s ease-out;
+  transition: -webkit-transform 1s 1.3s ease-out;
+  -o-transition: transform 1s 1.3s ease-out;
+  transition: transform 1s 1.3s ease-out;
+  transition: transform 1s 1.3s ease-out, -webkit-transform 1s 1.3s ease-out; }
+
+.pageisloaded:before {
+  content: '';
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 1s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 1s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 1s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.pageisloaded:after {
+  content: '';
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: all 1s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 1s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 1s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.pageisloaded .counter {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }

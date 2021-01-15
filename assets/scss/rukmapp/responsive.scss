@@ -1,0 +1,251 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    /*
+    body {
+        //background-color: red;
+    }*/
+
+    .logotipo-rukma {
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        //background-color: yellow;
+
+        .header {
+            height: 50vh;
+        }
+
+        .logotipo-rukma {
+            padding-top: 1rem;
+            padding-left: 2rem;
+        }
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        //background-color: green;
+
+        .container-full {
+            text-align: center;
+            margin: 0 auto !important;
+        }
+
+        .header {
+            height: 50vh;
+        }
+
+        .footer {
+            padding: 20px 0;
+        }
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    body {
+        //background-color: peru;
+
+        .container-full {
+            text-align: center;
+            margin: 0 auto !important;
+        }
+
+        .logotipo-rukma {
+            padding-top: 2rem;
+            margin: 0 auto !important;
+
+        }
+
+        .header {
+            height: 50vh;
+        }
+
+        .footer {
+            padding: 20px 0;
+        }
+
+        .box-rukma {
+            .title {
+                font-size: 2rem !important;
+            }
+
+            .subtitle {
+                padding: 1rem 0px;
+            }
+
+            .paragraf {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 634px) {
+    body {
+
+        //background-color: orange;
+        .container-full {
+            text-align: center;
+            margin: 0 auto !important;
+        }
+
+        .logotipo-rukma {
+            padding-top: 2rem;
+            margin: 0 auto !important;
+        }
+
+        .header {
+            height: 50vh;
+        }
+
+        .footer {
+            padding: 20px 0;
+        }
+
+        .box-rukma {
+            .title {
+                font-size: 2rem !important;
+            }
+
+            .subtitle {
+                padding: 1rem 0px;
+            }
+
+            .paragraf {
+                font-size: 1.2rem !important;
+            }
+        }
+
+    }
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    body {
+
+        //background-color: blue;
+
+        .container-full {
+            text-align: center;
+            margin: 0 auto !important;
+        }
+
+        .logotipo-rukma {
+            padding-top: 2rem;
+            margin: 0 auto !important;
+        }
+
+        .header {
+            height: 50vh;
+        }
+
+        .footer {
+            padding: 20px 0;
+        }
+
+        .box-rukma {
+            .title {
+                font-size: 2rem !important;
+            }
+
+            .subtitle {
+                padding: 1rem 0px;
+            }
+
+            .paragraf {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1199px) {
+    .footer {
+
+        .copy,
+        .follow-label {
+            display: none;
+        }
+
+        padding: 50px 0;
+        position: relative;
+        top: 0;
+        bottom: auto;
+        left: 0;
+        right: auto;
+        height: auto;
+
+        .copy {
+            margin-bottom: 10px;
+            display: block;
+            position: relative;
+            text-align: center;
+        }
+
+        .soc-box {
+            position: relative;
+            right: auto;
+            left: 0;
+            top: 0;
+            bottom: auto;
+            float: none;
+            width: auto;
+            text-align: center;
+        }
+
+        .soc a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+    }
+
+    .home .footer {
+        padding: 0;
+        position: fixed;
+        bottom: 50px;
+        top: auto;
+        left: 50px;
+        right: 50px;
+        height: 1px;
+
+        .copy {
+            display: none;
+        }
+
+        .soc-box {
+            position: absolute;
+            right: 0;
+            left: auto;
+            top: auto;
+            bottom: 0;
+            float: right;
+            width: 20px;
+        }
+
+        .soc a {
+            margin: 10px 0 0;
+            display: block;
+
+            .icon {
+                font-size: 17px;
+            }
+        }
+    }
+}

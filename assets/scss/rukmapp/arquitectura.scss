@@ -1,0 +1,32 @@
+body {
+    background-color: $cb;
+    font-family: $rale;
+    color: $ta;
+    font-size: 16px;
+    background-image: url('../images/back/iso.svg');
+    background-position: -140% 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden !important;
+}
+
+
+/* ======== $LINK ======== */
+a {
+    color: $ta;
+
+    span {
+        color: white;
+    }
+
+    &:hover {
+        transition: 0.8s all;
+        color: white;
+    }
+}
+
+/* ======== $DESTACADO ======== */
+.destacado {
+    color: $ca !important;
+    font-weight: regular;
+}
